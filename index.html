@@ -3,25 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>AI Recipe Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Recipe Generator</h1>
-    </header>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/itswanja/" target="_blank"
-        >Charity Wanja Mwaura</a
-      >
-      and is
-      <a href="https://github.com/itswanja/Recipe-generator" target="_blank"
-        >open-sourced on Github</a
-      >
-      and is hosted
-      <a href="https://ai-recipe-generator-1.netlify.app/" target="_blank"
-        >on Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Recipe Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the food you want recipe for"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+            />
+            <input type="submit" value="Submit" class="submit-button" />
+          </form>
+        </div>
+        <div class="recipe" id="recipe">
+          Preheat the oven to 350 degrees F (175 degrees C). Line an 8x8-inch
+          square pan with enough parchment paper to have overhang on all sides.
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/itswanja/" target="_blank"
+          >Charity Wanja Mwaura</a
+        >
+        and is
+        <a href="https://github.com/itswanja/Recipe-generator" target="_blank"
+          >open-sourced on Github</a
+        >
+        and is hosted
+        <a href="https://ai-recipe-generator-1.netlify.app/" target="_blank"
+          >on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
